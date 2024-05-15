@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>signUp</title>
+\<link rel="stylesheet" href="signUp.css">
+</head>
+<body>
+ <header class="header">
+   <a href="" class="log"><img src="WhatsApp Image 2024-05-04 à 18.03.02_f5b9c448.jpg"/></a>
+   <nav class="navbar">
+<a href="pas.html">Home</a>
+<a href="cake.html">cakes</a>
+<a href="cheesecake.html">cheesecakes</a>
+<a href="new-arrivals.html">new arrivals</a>
+<a href="review.html">review</a>
+<a href="signIn.html">signIn</a>
+<a href="signUp.html">signUp</a>
+</nav>
+
+    </div>
+    </header>
+
+    
+
+
+        <div id="name-field">
+            <h4>INSCRIPTION</h4>
+            <hr>
+            <label>Nom</label>
+            <input type="text" id="in1" >
+            <label>Prenom</label>
+            <input type="text" id="in2" >
+            
+            <label>Nom-utilisateur</label>
+            <input type="text" id="in3" >
+            
+            <label>Adresse mail</label>
+            <input type="text" id="in4" >
+            
+            <label>Mot de passe</label>
+            <input type="text" id="in5" >
+            
+            <span id="s1" style="color: red;"></span>
+            <br>
+            <span id="s1" style="color: red;"></span><br>
+        <button onclick="redirectToLogin()" class="ins">S'inscrire</button>
+    </div>
+
+    <script>
+        function redirectToLogin() {
+
+            var NameValue = document.getElementById('in1').value;
+            var nameValue = document.getElementById('in2').value;
+            var userNameValue = document.getElementById('in3').value;
+            var mailValue = document.getElementById('in4').value;
+            var passValue = document.getElementById('in5').value;
+
+            if(passValue.length < 8) {
+                document.getElementById('s1').innerHTML='Password must be at least 8 characters long';
+                return; 
+            }
+
+            // Redirection vers la page de connexion avec les données d'inscription en paramètres d'URL
+            window.location.href = "signIn.html?username=" + userNameValue + "&mail=" + mailValue + "&password=" + passValue;
+        }
+    </script>
+</body>
+</html>

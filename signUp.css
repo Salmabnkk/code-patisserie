@@ -1,0 +1,103 @@
+:root{
+    --main-color:rgb(75, 185, 159);
+    --nav-color:#3f8d7c;
+    --bg-color:rgb(221, 233, 230);
+    --back:rgb(10, 34, 56);
+    --card-color:rgb(53, 139, 148);
+    --border: .1rem solid var(--card-color);
+    --box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: all 1s ease-in;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+.title{
+   text-shadow: 2px 2px 0 var(--main-color);
+    text-align: center;
+    color: #d37a7a;
+    text-transform: uppercase;
+    padding: 3.5rem 0;
+    font-size: 4rem;
+    margin-top: 10rem;
+}
+
+
+.header{
+    background-color: var(--nav-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 16vh;
+}
+.header .log img {
+    height: 10rem;
+    border-radius: 60%;
+
+}
+.header .navbar a{
+    color: antiquewhite;
+    font-size: 1.6rem;
+    margin: 0 1rem;
+
+}
+.header .navbar a:hover{
+    color: var(--back);
+    border-top: 0.3rem solid var(--back);
+    border-bottom:0.3rem solid var(--back) ;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+   background: url('beautiful-bakery-wallpapers-1920x1080-iphone.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    background-color: #826e26;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.2);
+    width: 300px;
+}
+h4{
+    text-align: center;
+    font-size: 20px;
+}
+hr{
+    margin: 20px 0;
+    border: 0;
+    height: 1px;
+   width:100%;
+}
